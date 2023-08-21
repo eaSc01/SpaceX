@@ -11,10 +11,10 @@ let scrollStarted = false;          // this flag stops the counter from restarti
 let swiperPos = 0;                  // current image pos in swiper
 
 const captions = [
-    "Falcon 9 launches Dragon to the International Space Station from Launch Complex 39A",
-    "Falcon 9 lifts off with its Iridium-8 payload",
-    "Falcon 9 with its Radarsat payload at sunset before launch",
-    "Falcon 9 first and second stages after separating in flight"
+    "Launched Dragon to the International Space Station from Launch Complex 39A",
+    "Lifts off with its Iridium-8 payload",
+    "Radarsat payload at sunset before launch",
+    "First and second stages after separating in flight"
 ];
 
 document.addEventListener('scroll', scrollPage);  // listens to scroller
