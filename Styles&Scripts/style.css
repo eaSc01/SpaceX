@@ -14,6 +14,7 @@ html {
 
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 100px;
     color: #FFFFFF;
@@ -22,6 +23,13 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 3;
+    overflow: hidden;
+    opacity: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navBar-disappear {
+    opacity: 0;
 }
 
 .navbar a {
@@ -236,25 +244,43 @@ html {
     text-transform: uppercase;
 }
 
+/* SubTitle */
 .hero-inner-left-bottom p {
     font-weight: 500;
     font-size: 1.4rem;
     margin: 7px 0px;
+}
+
+/* subtitle fadeUpIn Animation using JS */
+.fadeUpIn0s {
     animation: fadeInUp 0.5s ease-in-out;
 }
 
+/* Title */
 .hero-inner-left-bottom h1 {
     font-weight: bolder;
     font-size: 2.85rem;
+}
+
+/* Title fadeUpIn Animation using JS */
+.fadeUpIn02s {
     animation: fadeInUp 0.5s ease-in-out 0.2s;
     animation-fill-mode: both;
 }
 
-.hero-inner-left-bottom a {
+/* Watch Button fade up animation using JS*/
+.fadeUpIn04s {
     animation: fadeInUp 0.5s ease-in-out 0.4s;
     animation-fill-mode: both;
-
 }
+
+/* Elements are hidden initially  */
+.animate-group0s,
+.animate-group02s,
+.animate-group04s {
+    visibility: hidden;
+}
+
 
 .hero-inner-left-bottom p,
 .hero-inner-left-bottom h1,
@@ -514,7 +540,7 @@ footer {
 }
 
 .subDataTable .dataValue {
-    text-transform: none;
+    text-transform: none; 
     width: 60%;
     text-align: right;
 }
