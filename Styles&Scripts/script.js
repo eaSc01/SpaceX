@@ -1,3 +1,8 @@
+fetch("https://meme-api.com/gimme")
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data);
+    })
 
 // viewPort values
 let viewHeight = document.documentElement.clientHeight;
